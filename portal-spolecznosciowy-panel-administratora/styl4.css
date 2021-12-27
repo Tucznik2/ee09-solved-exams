@@ -1,0 +1,25 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.baner, .stopka{
+    background-color: #af4448;
+    color: #fff;
+    text-align: center;
+    height: 20px;
+    clear: both;
+}
+.lewy, .prawy{
+    background-color: #ffa4a2;
+    height: 650px;
+    width: 50%;
+    float: left;
+}
+h4{
+    margin: 0px;
+}
+input[type="submit"]{
+    background-color: #af4448;
+    color: #fff;
+    padding: 5px;
+    margin: 10px;
+}
