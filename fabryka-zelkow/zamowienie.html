@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabryka żelków</title>
+    <link rel="stylesheet" href="styl9.css">
+</head>
+<body>
+    <div class="top-lewy">
+        <a href="index.html"><img src="cukierki2.png" alt="logo fabryki"></a>
+    </div>
+    <div class="top-prawy"><a href="zamowienie.html">Zamówienie</a></div>
+    <header class="banner"><h2>Zamów nasz produkt</h2></header>
+    <main>
+        <div class="main-lewy">
+            <h1>Oferta</h1>
+            <table>
+                <tr>
+                    <th>Kształty</th>
+                    <th>Kolory</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>miś</li>
+                            <li>żabka</li>
+                            <li>serce</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>czerwony</li>
+                            <li>niebieski</li>
+                            <li>żółty</li>
+                            <li>inny</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="main-prawy">
+            <label for="ksztalt">Podaj numer kształtu</label>
+            <input type="number" name="ksztalt" id="ksztalt"><br>
+            <label for="kolor">Skomponuj swój kolor</label><br>
+            <label for="red">R:</label>
+            <input type="number" name="kolor" id="red">
+            <label for="green">G:</label>
+            <input type="number" name="kolor" id="green">
+            <label for="blue">B:</label>
+            <input type="number" name="kolor" id="blue">
+            <button type="submit" id="zamow">Zamów</button>
+            <p id="zamowienie">Wybrany kształt</p>
+            <button id="wybrany-kolor">Wybrany kolor</button>
+        </div>
+    </main>
+    <footer class="stopka">Autor strony: <i>00000000000</i></footer>
+    <script>
+        function jakiKsztalt(nrKsztalt){
+            if(nrKsztalt == 1){
+                return "miś";
+            }
+            else if(nrKsztalt == 2){
+                return "żabka";
+            }
+            else if(nrKsztalt == 3){
+                return "serce";
+            }
+            else{
+                return "inny";
+            }
+        }
+        document.getElementById('zamow').addEventListener('click',function(){
+            let nrKsztalt = document.getElementById('ksztalt').value;
+            let ksztalt = jakiKsztalt(nrKsztalt);
+            let red = parseInt(document.getElementById('red').value);
+            let green = parseInt(document.getElementById('green').value);
+            let blue = parseInt(document.getElementById('blue').value);
+            console.log(typeof(red))
+            document.getElementById('zamowienie').innerHTML = `Zamówiłeś żelka: ${ksztalt}`;
+            document.getElementById('wybrany-kolor').style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+        })
+    </script>
+</body>
+</html>

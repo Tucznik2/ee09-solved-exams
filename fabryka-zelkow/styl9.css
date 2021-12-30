@@ -1,0 +1,45 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.top-lewy, .top-prawy{
+    background-color: rgb(197, 85, 160);
+    text-align: center;
+    width: 50%;
+    height: 180px;
+    float: left;
+}
+.banner, .stopka{
+    background-color: rgb(246, 226, 222);
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+    clear: both;
+}
+main > div{
+    background-color: rgb(197, 85, 160);
+    height: 400px;
+    width: 50%;
+    color: #fff;
+    float: left;
+}
+.top-prawy > a{
+    padding-right: 70px;
+    padding-bottom: 120px;
+    font-size: 150%;
+    text-decoration: none;
+}
+table, td, th{
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 10px;
+}
+h2{
+    letter-spacing: 10px;
+    font-size: 200%;
+}
+.top-lewy img{
+    height: 180px;
+}
+.main-prawy img{
+    height: 400px;
+}
