@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmy</title>
+    <link rel="stylesheet" href="styl1.css">
+</head>
+<body>
+    <aside class="lewy">
+        <h3>Dostępne gatunki filmu</h3>
+        <ol>
+            <li>Sci-Fi</li>
+            <li>animacja</li>
+            <li>dramat</li>
+            <li>horror</li>
+            <li>komedia</li>
+        </ol>
+        <p><a href="kadr.jpg">Pobierz obraz</a></p>
+        <p><a href="repertuar-kin.pl" target="_blank">Sprawdź repertuar kin</a></p>
+    </aside>
+    <header class="baner">
+        <h1>FILMOTEKA</h1>
+    </header>
+    <main class="formularz">
+        <form action="dodaj.php" method="post">
+            <label for="tytul">Tytuł:</label>
+            <input type="text" name="tytul" id="tytul"><br>
+            <label for="gatunek">Gatunek filmu:</label>
+            <input type="number" name="gatunek" id="gatunek"><br>
+            <label for="rok">Rok produkcji:</label>
+            <input type="number" name="rok" id="rok"><br>
+            <label for="ocena">Ocena</label>
+            <input type="number" name="ocena" id="ocena"><br>
+            <input type="reset" value="CZYŚĆ">
+            <input type="submit" value="DODAJ">
+        </form>
+    </main>
+    <section class="obraz">
+        <img src="kadr.jpg" alt="zdjęcia filmowe">
+    </section>
+    <footer class="stopka">
+        <p>Autor strony: 00000000000</p>
+    </footer>
+</body>
+</html>
