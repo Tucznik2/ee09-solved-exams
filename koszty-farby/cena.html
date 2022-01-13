@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malarz</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header class="banner">
+        <h1><a href="index.html">Koszty farby</a></h1>
+    </header>
+    <aside class="lewy">
+        <h3>Mieszamy i wyceniamy</h3>
+        <a href="mieszamy.html">Mieszamy</a>
+        <a href="cena.html">Wyceniamy</a>
+    </aside>
+    <main class="prawy">
+        <h3>Obliczanie na podstawie powierzchni zapotrzebowania na farbę</h3>
+        Podaj powierzchnię:
+        <input type="number" name="powierzchnia" id="powierzchnia"><br>
+        <button id="policz">Policz</button>
+        <p id="wynik"></p>
+    </main>
+    <footer class="stopka">
+        Malarz<br>
+        Strone opracował: 00000000000
+    </footer>
+    <script>
+        const BUTTON_POLICZ = document.getElementById('policz');
+        BUTTON_POLICZ.addEventListener('click', function(){
+            let powierzchnia = parseFloat(document.getElementById('powierzchnia').value);
+            let liczbaPuszek = Math.ceil(powierzchnia/4);
+            document.getElementById('wynik').innerHTML = liczbaPuszek;
+        })
+    </script>
+</body>
+</html>
