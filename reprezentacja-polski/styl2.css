@@ -1,0 +1,49 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: seagreen;
+}
+.banner{
+    color: #fff;
+    text-align: center;
+    height: 330px;
+}
+.info{
+    color: #fff;
+    text-align: center;
+    width: 170px;
+    margin: 5px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    float: left;
+}
+.info:hover{
+    background-color: #fff;
+    color: #000;
+}
+.main{
+    color: #fff;
+    clear: both;
+}
+.lewy{
+    background-color: whitesmoke;
+    width: 30%;
+    text-align: center;
+    height: 150px;    
+    float: left;
+}
+.prawy{
+    background-color: whitesmoke;
+    width: 70%;
+    height: 150px;
+    float: left;
+}
+h3{
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: capitalize;
+}
+.lewy img{
+    display: block;
+    height: 80px;
+    margin: 0 auto;
+}
