@@ -1,0 +1,56 @@
+.baner1, .baner2, .stopka{
+    background-color: #000033;
+    color: #fff;
+    clear: both;
+}
+.baner1{
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+.baner2{
+    height: 20px;
+}
+.menu1, .menu3{
+    background-color: #e0e9f1;
+    height: 40px;
+    padding-top: 10px;
+    width: 33%;
+    float: left;
+}
+.menu2{
+    background-color: #b3c6d9;
+    height: 40px;
+    width: 34%;
+    padding-top: 10px;
+    float: left;
+}
+.lewy, .prawy{
+    background-color: #b3c6d9;
+    width: 33%;
+    height: 400px;
+    padding-top: 100px;
+    float: left;
+}
+.srodek{
+    background-color: #e0e9f1;
+    width: 34%;
+    height: 400px;
+    padding-top: 100px;
+    float: left;
+}
+.stopka{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+body{
+    text-align: center;
+    font-size: 20px;
+}
+table, td{
+    border: solid 1px;
+}
