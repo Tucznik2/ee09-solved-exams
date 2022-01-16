@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wskaźnik jakości hasła</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header class="baner">
+        <h1><a href="index.html">Weryfikacja jakości hasła</a></h1>
+    </header>
+    <aside class="lewy">
+        <h2>Wybierz opcję</h2>
+        <ul>
+            <li><a href="sprawdz.html">Sprawdź hasło</a></li>
+            <li><a href="reguly.html">Reguły tworzenia hasła</a></li>
+        </ul>
+    </aside>
+    <section class="prawy">
+        <p>Wpisz hasło:</p>
+        <input type="password" name="haslo" id="haslo">
+        <input type="button" value="Weryfikuj" id="weryfikuj">
+        <p id="wynik"></p>
+    </section>
+    <footer class="stopka">
+        <h3>Wskaźnik jakości hasła</h3>
+        <p>Twórca strony: 00000000000</p>
+    </footer>
+    <script>
+        document.getElementById('weryfikuj').addEventListener('click', function pseudoregex() { //regex
+            let dane = document.getElementById("haslo").value;
+            if (!dane == 1) {
+                document.getElementById("wynik").style.color = "red";
+                document.getElementById("wynik").innerHTML = "WPISZ HASŁO!";
+            }
+            else if (dane.search("[0-9]") > 0 && dane.length >= 7) {
+                document.getElementById("wynik").style.color = "green";
+                document.getElementById("wynik").innerHTML = "DOBRE";
+            }
+            else if (dane.search("[0-9]") > 0 && dane.length >= 4 && dane.length <= 6) {
+                document.getElementById("wynik").style.color = "blue";
+                document.getElementById("wynik").innerHTML = "ŚREDNIE";
+            }
+
+            else {
+                document.getElementById("wynik").style.color = "orange";
+                document.getElementById("wynik").innerHTML = "SŁABE";
+            }
+        })
+    </script>
+</body>
+</html>
