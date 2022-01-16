@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Weselny</title>
+    <link rel="stylesheet" href="styl5.css">
+</head>
+<body>
+    <header class="baner">
+        <h1>
+            <img src="logo.png" style="height: 70px;">
+            Dom Weselny zorganizuje wesele za Ciebie
+            <img src="logo.png" style="height: 70px;">
+        </h1>
+    </header>
+    <section class="lewy">
+        <h2>Dom Weselny</h2>
+        <p>ul. Przemysłowa 5</p>
+        <p>Kalisz</p>
+        <p><a href="logo.png" download>Pobierz logo</a></p>
+    </section>
+    <section class="srodek">
+        <h2>Oferujemy</h2>
+        <ul>
+            <li>Wesela</li>
+            <li>Bankiety</li>
+            <li>Konferencje</li>
+        </ul>
+    </section>
+    <section class="prawy">
+        <p><a href="Regulamin.txt">czytaj regulamin</a></p>
+    </section>
+    <main class="dolny">
+        <h2>Ile będzie kosztowało moje wesele?</h2>
+        <label for="goscie">Podaj liczbę gości:</label>
+        <input type="number" name="goscie" id="goscie">
+        <input type="checkbox" name="poprawiny" id="poprawiny">
+        <label for="poprawiny">Wesele z poprawinami?</label>
+        <button id="oblicz">Oblicz koszt</button>
+        <p id="wynik"></p>
+    </main>
+    <footer class="stopka">
+        Stronę internetową opracował: <i>00000000000</i>
+    </footer>
+    <script>
+        document.getElementById('oblicz').addEventListener('click', function(){
+            let iloscGosci = parseInt(document.getElementById('goscie').value);
+            let czyPoprawiny = document.getElementById('poprawiny').checked;
+            console.log(czyPoprawiny)
+            if(!czyPoprawiny){
+                let kosztWesele = iloscGosci*100;
+                document.getElementById('wynik').innerHTML = "Koszt twojego wesela to "+kosztWesele+" złotych";
+            }
+            else{
+                let kosztWesele = (iloscGosci*100)*130/100;
+                document.getElementById('wynik').innerHTML = "Koszt twojego wesela to "+kosztWesele+" złotych";
+            }
+        })
+    </script>
+</body>
+</html>
