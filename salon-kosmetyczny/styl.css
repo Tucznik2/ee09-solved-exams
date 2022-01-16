@@ -1,0 +1,49 @@
+*{
+    font-family: Garamond;
+}
+.oferta{
+    height: 500px;
+    width: 25%;
+    background-color: lavender;
+    float: left;
+}
+.foto{
+    height: 300px;
+    width: 25%;
+    background-color: lavender;
+    float: left;
+}
+.banner{
+    height: 150px;
+    width: 75%;
+    background-color: indigo;
+    color: #fff;
+    font-size: 200%;
+    text-align: center;
+    float: right;
+}
+.kontakt{
+    height: 650px;
+    width: 75%;
+    background-color: lavender;
+    font-size: 200%;
+    text-align: center;
+    float: right;
+}
+footer{
+    background-color: indigo;
+    color: #fff;
+    text-align: right;
+    clear: both;
+}
+ul{
+    list-style-type: square;
+}
+img{
+    padding: 5px;
+    margin: 10px;
+}
+img:hover{
+    padding: 4px;
+    border: 1px solid indigo;
+}
